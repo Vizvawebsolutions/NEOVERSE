@@ -13,6 +13,9 @@ import TopBar from "../../Components/TopBar/TopBar";
 //importing styling files
 import "./HomePage.css";
 
+//importing Footer component
+import Footer from "../../Components/Footer/Footer";
+
 const CoverContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -177,6 +180,7 @@ function HomePage() {
           </h1>
           <Button className="talk" variant="contained">
             Let's Talk
+            <img src="https://cdn.icon-icons.com/icons2/461/PNG/128/grimace_43851.png" alt="" className="smiley" />
           </Button>
         </div>
       </CoverContainer>
@@ -232,12 +236,13 @@ function HomePage() {
 
             <div className="counter">
               <div className="strike">
-                <span>{projectsCount} +</span>
+                {projectsCount} +
                 <p>Projects</p>
                 <Button className="talk" variant="contained">
                   Contact Me
                 </Button>
               </div>
+
 
               <div className="strike">
                 <span>{clientsCount} +</span>
@@ -279,7 +284,28 @@ function HomePage() {
         </div>
       </div>
 
-      {/* projects show case starts*/}
+      {/* projects show case ends*/}
+
+
+      {/* contact show starts*/}
+
+      <div className="contact">
+        <div className="contact_quote">
+          <h2>
+            "I'm always looking for new opportunities to collaborate and grow." Let's Join and work Togethere.
+          </h2>
+        </div>
+
+        <div className="contact_social">
+          <Button variant="contained">Hit on my Social <img src="https://cdn.icon-icons.com/icons2/461/PNG/128/big_smile_43859.png" alt="smiley" className="smiley" /></Button>
+        </div>
+
+
+      </div>
+      {/* contact show ends*/}
+
+      <Footer />
+
     </>
   );
 }
