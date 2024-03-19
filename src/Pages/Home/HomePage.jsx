@@ -236,7 +236,7 @@ function HomePage() {
 
             <div className="counter">
               <div className="strike">
-                {projectsCount} +
+                <span>{projectsCount} +</span>
                 <p>Projects</p>
                 <Button className="talk" variant="contained">
                   Contact Me
